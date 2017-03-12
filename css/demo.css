@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+div,
+input,
+button,
+a {
+	outline: none;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.fl {
+	float: left;
+}
+
+.clearfix:before {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+
+/*时间*/
+
+.search-group {
+	display: inline-block;
+	line-height: 26px;
+	position: relative;
+	vertical-align: middle;
+}
+
+.search-group>div:first-child {
+	width: 100px;
+}
+
+.search-group .sel {
+	line-height: 26px;
+	position: relative;
+	height: 26px;
+	border: 1px solid #d8dde6;
+	border-right: none;
+}
+
+.search-group .sel ul {
+	position: absolute;
+	top: 26px;
+	left: -1px;
+	border: 1px solid #d8dde6;
+	border-bottom: none;
+	min-width: 100%;
+	width: auto;
+	white-space: nowrap;
+	background: #fff;
+	z-index: 2;
+}
+
+.search-group .sel ul li {
+	border-bottom: 1px solid #d8dde6;
+	padding: 0 15px;
+	cursor: pointer;
+}
+
+.sel-icon {
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	text-align: center;
+	background: -webkit-linear-gradient(top, #fff, #d8dde6);
+	border-left: 1px solid #d8dde6;
+	cursor: pointer;
+}
+
+.search-group input {
+	width: 110px;
+	padding-left: 10px;
+	padding-right: 20px;
+	height: 28px;
+	border: 1px solid #d8dde6;
+}
+
+
+/*下拉框*/
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+}
+
+input {
+	width: 200px;
+	box-sizing: border-box;
+	border: 1px solid #C5C5C5;
+	height: 30px;
+	padding: 0 10px;
+}
+
+.dropdown a {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	display: block;
+	top: 0;
+	right: 0;
+	background: #ccc;
+	-webkit-user-select: none;
+}
+
+.dropdown ul {
+	position: absolute;
+	top: 30px;
+	box-sizing: border-box;
+	line-height: 30px;
+	width: 200px;
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background: #fff;
+	z-index: 1;
+	border: 1px solid #C5C5C5;
+	border-top: none;
+}
+
+.dropdown ul input {
+	width: 180px;
+	height: 20px;
+}
+
+.dropdown li {
+	padding: 0 10px;
+}
+
+.dropdown li:nth-of-type(even) {
+	background: #D7D7D7;
+}
+
+.dropdown li.active {
+	background: deepskyblue;
+	color: white;
+}
+
+.dropdown li.hover {
+	background: blue;
+	color: white;
+}
+
+.textoverflow {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
